@@ -1,0 +1,277 @@
+:root {
+  /* --color-1: #535353; */
+  --color-1: #124838;
+  --color-2: #fde4b5;
+  --color-3: rgb(227, 164, 118);
+  --border-color: #e3a476;
+  --icon-color: #e3a476;
+}
+::selection {
+  color: white;
+  background-color: var(--color-1);
+}
+
+html {
+  scroll-padding-top: 70px;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+/* ---------------------------- Start navbar ----------------------------  */
+.nav-bg-color {
+  background-color: var(--color-2);
+}
+.form-color {
+  border-color: var(--color-1) !important;
+  box-shadow: var(--color-1) !important;
+}
+.list-color a {
+  color: var(--color-1);
+  letter-spacing: 0.71px;
+}
+.list-color a:active,
+.list-color a:hover,
+.list-color a:focus {
+  color: var(--color-1);
+  font-weight: 900;
+  letter-spacing: 0px !important;
+}
+
+nav input {
+  padding-left: 60px !important ;
+}
+
+form {
+  width: 50%;
+  margin-right: 10px;
+}
+.search-icon {
+  width: 100%;
+  top: 14px;
+  left: 23px;
+}
+nav div svg {
+  font-size: 20px;
+  color: var(--color-1);
+  opacity: 40%;
+}
+
+input:active {
+  color: var(--color-1);
+}
+nav button svg {
+  color: var(--color-1);
+  font-size: 25px;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+/* ---------------------------- End navbar ----------------------------  */
+
+/* ---------------------------- Start First section ----------------------------  */
+.text-style {
+  /* font-size: 4rem; */
+  font-weight: 300 !important;
+  /* line-height: 1; */
+}
+.aranyak {
+  /* font-size: 72px; */
+  background: linear-gradient(#ff0000, #740101);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.btn-style {
+  padding: 10px 80px;
+  color: white;
+  background-image: linear-gradient(90deg, rgba(128, 128, 128, 0.644), gray);
+  transition: 0.3s ease-in-out;
+}
+@media (max-width: 415px) {
+  .btn-style {
+    padding: 10px 33px;
+  }
+}
+
+.btn-style:hover {
+  background-image: linear-gradient(white, white);
+  border: 1px solid gray;
+  color: gray;
+  outline: 5px solid gray;
+  outline-offset: 5px;
+}
+/* ----------------------------   End First section  ----------------------------  */
+
+/* ---------------------------- Start second section ----------------------------  */
+.text-color {
+  color: var(--color-3);
+}
+.text-color2 {
+  color: var(--color-1);
+  margin: 0%;
+}
+.card-style {
+  border: none;
+  padding: 0;
+}
+/* ----------------------------   End second section ----------------------------  */
+
+/* ----------------------------  Start our-team section ----------------------------  */
+.card-style {
+  font-weight: 500;
+  font-family: "Noto Sans Mayan Numerals", sans-serif;
+}
+
+.border-style {
+  border: 2px solid var(--color-2);
+  position: relative;
+}
+
+@media (min-width: 0px) {
+  .text-card-style {
+    margin-top: -50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .text-card-style {
+    margin-left: -110px;
+    max-width: 450px;
+    position: relative;
+  }
+}
+
+.rounded-10 {
+  border-radius: 40px;
+}
+
+.card-img-border {
+  border: 2px solid var(--border-color);
+}
+.icon-style {
+  top: 50%;
+  left: 3px;
+  transform: translateY(-50%);
+  justify-content: space-evenly;
+}
+
+.icon-style > svg {
+  color: var(--icon-color);
+  opacity: 0.6;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.icon-style > svg:hover {
+  opacity: 1;
+}
+
+@media (min-width: 992px) {
+  .ff {
+    width: 75%;
+  }
+}
+#our-team img {
+  transition: transform 1s ease;
+}
+#our-team img:hover {
+  transform: scale(1.02);
+}
+/* ---------------------------- End our-team section ----------------------------  */
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
+/* ---------------------------- End our-team section ----------------------------  */
+
+#review .card {
+  background-color: #ffd99180;
+  border: none;
+  border-radius: 30px;
+}
+.stars {
+  color: #e3a476;
+}
+#review .card .ll {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#review .card .ll img {
+  width: 70%;
+  border-radius: 20px;
+}
+.img-container img {
+  width: 90%;
+}
+
+#email-field {
+  border: 1px solid var(--color-1);
+}
+#email-field:focus {
+  box-shadow: 0px 0px 0px 5px #12483875;
+  border: 1px solid var(--color-1);
+}
+
+.submit-email {
+  background-color: var(--color-1);
+  color: #fff;
+  width: 58px;
+  height: 58px;
+  border: 2px solid var(--color-1);
+  transition: 0.3s ease-in-out;
+}
+.submit-email:hover {
+  border: 2px solid var(--color-1);
+  background-color: #fff;
+  color: var(--color-1);
+}
+
+
+/* ---------------------------- Start footer  ----------------------------  */
+
+
+
+footer{
+  background-image: url('../images/illustrations/BOTTOM.png') ;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  height: 122vh;
+  color: #fff;
+}
+/* ---------------------------- End footer  ----------------------------  */
+
+
+.footer ul li {
+  margin-bottom: 10px;
+  
+}
+
+address {
+  line-height: 1.5;
+  font-style: normal;
+}
+
+.footer a {
+  font-size: 20px;
+  text-decoration: none;
+color: #ffffff7d;
+}
+
+.footer  a:hover {
+  color: #fff;
+}
+
+#footer-of-footer{
+  background-color: #0c3026;
+}
